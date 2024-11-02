@@ -5,6 +5,6 @@ const PORT = process.env.PORT || 3000;
 
 const server = startServer();
 
-server.listen(PORT, 'localhost', () => {
+server.listen(PORT, () => {
 	console.log(`Сервер запущен на порте ${PORT}`);
 });
