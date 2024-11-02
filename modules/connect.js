@@ -11,4 +11,7 @@ export const knex = Knex({
     password: process.env.DB_PASSWORD,
 		ssl: process.env.DB_SSL,
   },
+	pool: {
+		max: 10,
+	}
 });
