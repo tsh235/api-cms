@@ -9,6 +9,10 @@
     "lint": "eslint . --fix"
   },
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsh235/api-cms"
+  },
   "keywords": [
     "node",
     "api",
@@ -16,6 +20,10 @@
   ],
   "author": "Tatyana Shustrova <tanyashustrova@yandex.ru>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsh235/api-cms/issues"
+  },
+  "homepage": "https://github.com/tsh235/api-cms/#readme",
   "devDependencies": {
     "@types/node": "^22.8.6",
     "eslint": "^9.14.0",
