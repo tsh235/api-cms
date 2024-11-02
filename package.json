@@ -1,0 +1,32 @@
+{
+  "name": "api-shop-online",
+  "version": "1.0.0",
+  "description": "API интернет магазина ShopOnline",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "lint": "eslint . --fix"
+  },
+  "type": "module",
+  "keywords": [
+    "node",
+    "api",
+    "methed"
+  ],
+  "author": "Tatyana Shustrova <tanyashustrova@yandex.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "nodemon": "^3.1.7",
+    "prettier": "3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "knex": "^3.1.0",
+    "pg": "^8.13.0"
+  }
+}
