@@ -27,14 +27,14 @@ export const addProduct = async (req, res) => {
     units: data.units,
   };
 
-	if (!data.image.startsWith('data:image')) {
+  const dataImage = data.image.match(/^data:image\/([a-z+]+);base64,/i);
+	const format = dataImage ? dataImage[1] : null;
+
+	if (!dataImage && !data.image.startsWith('data:application')) {
 		res.writeHead(400, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({ message: INVALID_REQUEST_MESSAGE }));
 		return;
 	}
-
-  const dataImage = data.image.match(/^data:image\/([a-z+]+);base64,/i);
-	const format = dataImage ? dataImage[1] : null;
 
 	if (!dataImage) {
 		newProduct.image = data.image;
