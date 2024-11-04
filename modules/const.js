@@ -2,6 +2,7 @@ export const GOODS_FILE = process.env.GOODS_FILE;
 export const GOODS_DB = process.env.GOODS_DB;
 export const SERVER_ERROR_MESSAGE = 'Внутренняя ошибка сервера';
 export const INVALID_REQUEST_MESSAGE = 'Неверный запрос';
+export const INVALID_FORMAT_MESSAGE = 'Неверный формат изображения';
 export const NOT_FOUND_MESSAGE = 'Ничего не найдено';
 export const ERROR_LOAD_GOODS = {
   goods: [
